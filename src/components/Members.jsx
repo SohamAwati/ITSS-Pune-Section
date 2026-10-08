@@ -6,7 +6,12 @@ export default function Members() {
       <div className="wrap">
         <h2>Members</h2>
         <ul className="members">
-          {members.map((member, i) => <li key={i}>{member}</li>)}
+          {members.map((member, i) => (
+            <li key={i}>
+              <strong>{member.name}</strong>
+              <span>{member.designation}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

@@ -5,8 +5,22 @@ export const officers = [
   { name: 'Dr. Rachana Patil', role: 'Secretary', bio: 'ITSS IEEE Pune Section', email: 'rachana.patil@pccoepune.org', linkedin: 'https://www.linkedin.com/in/dr-rachana-patil-0b657b129/', photo: '/officers/rachana-patil.png' },
   { name: 'Dr. Sapana Kolambe', role: 'Treasurer', bio: 'ITSS IEEE Pune Section', email: 'sapana.kolambe@pccoepune.org', linkedin: 'https://www.linkedin.com/in/dr-sapana-kolambe-83765145/', photo: '/officers/sapana-kolambe.png' },
 ]
-// Replace these names as the member list is finalized.
-export const members = ['Member Name 1', 'Member Name 2', 'Member Name 3']
+export const members = [
+  { name: 'Dr. Roshani Raut', designation: 'Chair' },
+  { name: 'ASHWINI SAPKAL', designation: 'Co-Chair' },
+  { name: 'Dr. Rachana Patil', designation: 'Secretary' },
+  { name: 'Dr. Sapana Kolambe', designation: 'Treasurer' },
+  { name: 'Amar Buchade', designation: 'Senior Member' },
+  { name: 'Rakshit Jain', designation: 'Member' },
+  { name: 'Dr. Jayeshree Katti', designation: 'Member' },
+  { name: 'Dr. Rajani P K', designation: 'Senior Member' },
+  { name: 'Dwibedi Baikunthanatah', designation: 'Senior Member' },
+  { name: 'Swati Kumari', designation: 'Member' },
+  { name: 'Tanuja Patankar', designation: 'Member' },
+  { name: 'Rakhi Pagar', designation: 'Member' },
+  { name: 'Shraddha Tawade', designation: 'Member' },
+  { name: 'Dipali Patil', designation: 'Member' },
+]
 export const events = [
   { date: 'Date', title: 'Event title', text: 'Short description, venue and registration link.' },
   { date: 'Date', title: 'Event title', text: 'Short description, venue and registration link.' },
