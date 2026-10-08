@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Logo from './components/Logo.jsx'
 import Officers from './components/Officers.jsx'
+import Members from './components/Members.jsx'
 import { events, contact } from './data.js'
 
 const links = [['about', 'About'], ['officers', 'Officers'], ['events', 'Events'], ['join', 'Join'], ['contact', 'Contact']]
@@ -104,7 +105,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <main id="top"><Hero /><About /><Officers /><Events /><Join /><Contact /></main>
+      <main id="top"><Hero /><About /><Officers /><Members /><Events /><Join /><Contact /></main>
       <footer><div className="wrap foot">
         <p>© {new Date().getFullYear()} IEEE ITSS Pune Chapter · IEEE Pune Section</p>
         <p>IEEE is the world's largest technical professional organisation for the advancement of technology.</p>
