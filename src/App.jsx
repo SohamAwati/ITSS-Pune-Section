@@ -33,7 +33,7 @@ function Hero() {
         <div>
           <h1>ITSS IEEE Pune Section</h1>
           <p className="kicker">IEEE Intelligent Transportation Systems Society</p>
-          <p className="lead">The IEEE Intelligent Transportation Systems Society (ITSS) advances the theoretical, experimental, and operational aspects of Electrical Engineering and Information Technologies as applied to intelligent transportation systems (ITS). The mission of the Intelligent Transportation Systems Society (ITSS) is to advance the theoretical, experimental, and operational aspects of Electrical Engineering and Information Technologies as applied to intelligent transportation systems (ITS), defined as those systems utilizing synergistic technologies and systems engineering concepts to develop and improve transportation systems of all kinds.</p>
+          <p className="lead">The IEEE Intelligent Transportation Systems Society (ITSS) is an IEEE organizational unit dedicated to advancing intelligent transportation systems (ITS) through research, innovation, education, and practical applications. Our mission is to promote the advancement and practical application of electrical engineering, information technologies, and emerging technologies in intelligent transportation systems, fostering innovation, research, collaboration, and system-level solutions to improve the safety, efficiency, sustainability, and reliability of transportation systems.</p>
           <div className="btns">
             <a className="btn primary" href="#join">Join the chapter</a>
             <a className="btn ghost" href="#about">About ITSS</a>
@@ -51,10 +51,36 @@ function About() {
     <section id="about" className="sec"><div className="wrap">
       <h2>About ITSS</h2>
       <div className="two">
-        <div><h3>Overview</h3><p>The Intelligent Transportation Systems Society (ITSS) is an organisational unit of IEEE. It was established in 2005 and focuses on advancing the theoretical, experimental and practical aspects of Electrical Engineering and Information Technologies as applied to intelligent transportation systems (ITS).</p></div>
-        <div><h3>Mission</h3><p>To advance the theoretical, experimental and operational aspects of Electrical Engineering and Information Technologies as applied to intelligent transportation systems, defined as systems using synergistic technologies and systems engineering concepts to develop and improve transportation systems of all kinds.</p></div>
+        <div><h3>Overview</h3><p>The IEEE Intelligent Transportation Systems Society (ITSS) is an IEEE organizational unit dedicated to advancing intelligent transportation systems (ITS) through research, innovation, education, and practical applications. Established in 2005, the Society promotes the development and application of electrical engineering, information technologies, artificial intelligence, communication, and data-driven solutions to enhance the safety, efficiency, sustainability, and reliability of modern transportation systems.</p></div>
+        <div><h3>Mission</h3><p>To promote the advancement and practical application of electrical engineering, information technologies, and emerging technologies in intelligent transportation systems, fostering innovation, research, collaboration, and system-level solutions to improve the safety, efficiency, sustainability, and reliability of transportation systems.</p></div>
       </div>
-      <div className="note">The Pune Chapter operates under <strong>IEEE Pune Section</strong>. Chapter history and focus areas will be added here.</div>
+      <div className="two">
+        <div>
+          <h3>Objectives IEEE ITSS</h3>
+          <ol>
+            <li><strong>Build an Active ITSS Community:</strong> Establish Pune as a vibrant platform for ITS professionals, researchers, academicians, students and industry stakeholders.</li>
+            <li><strong>Promote ITSS Membership and Awareness:</strong> Increase awareness and participation among students, researchers, faculty, Young Professionals and industry professionals.</li>
+            <li><strong>Deliver High-Quality Technical Learning:</strong> Conduct expert lectures, workshops, seminars and technical interactions on emerging ITS technologies.</li>
+            <li><strong>Engage Students and Young Professionals:</strong> Create mentoring, career development, technical project and innovation opportunities.</li>
+            <li><strong>Strengthen Industry–Academia Interaction:</strong> Facilitate dialogue on real-world transportation challenges, applications, datasets, research and collaborative innovation.</li>
+            <li><strong>Develop Research and Innovation Networks:</strong> Promote interdisciplinary research, technical collaboration, innovation and future project opportunities.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Scope</h3>
+          <ul>
+            <li>Promote intelligent, safe, and sustainable transportation technologies.</li>
+            <li>Organize technical lectures, workshops, mentoring programmes, and hackathons.</li>
+            <li>Encourage research, innovation, and student projects in intelligent transportation systems.</li>
+            <li>Strengthen industry–academia collaboration and professional networking.</li>
+            <li>Identify and address real-world transportation challenges.</li>
+            <li>Facilitate multidisciplinary collaboration with IEEE societies, academia, and industry.</li>
+            <li>Develop technical skills, professional capabilities, and leadership among students and professionals.</li>
+            <li>Build a strong and sustainable IEEE ITSS community in Pune.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="note">The IEEE Intelligent Transportation Systems Society (ITSS) Chapter at IEEE Pune Section has been established to create a focused professional and technical platform connecting students, Young Professionals (YPs), researchers, academicians, industry professionals and transportation stakeholders working in Intelligent Transportation Systems (ITS).</div>
     </div></section>
   )
 }
@@ -65,7 +91,20 @@ function Events() {
       <h2>Events</h2>
       <p className="sub">Talks, workshops and competitions from the chapter.</p>
       <ul className="timeline">
-        {events.map((e, i) => <li key={i}><time>{e.date}</time><div><h3>{e.title}</h3><p>{e.text}</p></div></li>)}
+        {events.map((e, i) => (
+          <li key={i}>
+            <time>{e.date}</time>
+            <div>
+              <h3>{e.title}</h3>
+              <p>{e.text}</p>
+              {e.poster && (
+                <div style={{ marginTop: '16px', maxWidth: '500px' }}>
+                  <img src={e.poster} alt={`${e.title} poster`} style={{ width: '100%', borderRadius: '8px', border: '1px solid var(--line)', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
+                </div>
+              )}
+            </div>
+          </li>
+        ))}
       </ul>
     </div></section>
   )

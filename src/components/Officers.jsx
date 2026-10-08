@@ -4,7 +4,6 @@ export default function Officers() {
     <section id="officers" className="sec alt">
       <div className="wrap">
         <h2>Chapter officers</h2>
-        <p className="sub">The four officers who lead the chapter.</p>
         <div className="officers">
           {officers.slice(0, 4).map((o, i) => (
             <article className="officer" key={i}>
