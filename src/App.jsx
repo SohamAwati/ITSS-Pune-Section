@@ -146,8 +146,14 @@ export default function App() {
       <Header />
       <main id="top"><Hero /><About /><Officers /><Members /><Events /><Join /><Contact /></main>
       <footer><div className="wrap foot">
-        <p>© {new Date().getFullYear()} IEEE ITSS Pune Chapter · IEEE Pune Section</p>
-        <p>IEEE is the world's largest technical professional organisation for the advancement of technology.</p>
+        <div className="foot-logos">
+          <img src="/ieee-pune-logo.png" alt="IEEE Pune Section" className="foot-logo" />
+          <img src="/ieee-logo.svg" alt="IEEE" className="foot-logo" />
+        </div>
+        <div className="foot-text">
+          <p>© {new Date().getFullYear()} IEEE ITSS Pune Chapter · IEEE Pune Section</p>
+          <p>IEEE is the world's largest technical professional organisation for the advancement of technology.</p>
+        </div>
       </div></footer>
     </>
   )

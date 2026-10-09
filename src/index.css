@@ -81,8 +81,11 @@ nav#menu a:hover{background:var(--sky)}
 .contact{list-style:none;padding:0;margin:20px 0 0}
 .contact li{margin:8px 0}.contact strong{display:inline-block;min-width:80px;color:var(--navy)}
 
-footer{background:#111;color:#cfd6de;font-size:.9rem;padding:28px 0}
-.foot p{margin:4px 0}
+footer{background:#111;color:#cfd6de;font-size:.9rem;padding:40px 0}
+.foot{display:flex;flex-direction:column;gap:24px}
+.foot-logos{display:flex;gap:32px;align-items:center;flex-wrap:wrap;background:#fff;padding:16px 24px;border-radius:8px;align-self:flex-start}
+.foot-logo{height:40px;object-fit:contain}
+.foot-text p{margin:4px 0}
 
 @media (max-width:960px){.officers{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:760px){
