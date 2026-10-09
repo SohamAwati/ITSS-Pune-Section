@@ -10,19 +10,19 @@ function Header() {
   const [open, setOpen] = useState(false)
   return (
     <>
-      <div className="top-banner"><div className="wrap tb-flex">
-        <img src="/ieee-pune-logo.png" alt="IEEE Pune Section" className="tb-logo" />
-        <img src="/ieee-logo.png" alt="IEEE" className="tb-logo" />
-      </div></div>
       <div className="topbar"><div className="wrap">
         <a href="https://www.ieee.org" target="_blank" rel="noopener noreferrer">IEEE.org</a>
         <a href="https://its.ieee.org" target="_blank" rel="noopener noreferrer">IEEE ITSS</a>
         <a href="https://ieeepune.org" target="_blank" rel="noopener noreferrer">IEEE Pune Section</a>
       </div></div>
       <header className="nav"><div className="wrap navrow">
-        <a className="brand" href="#top"><Logo /><span>IEEE ITSS<small>Pune Chapter</small></span></a>
+        <div className="brand-group">
+          <a className="brand" href="#top"><Logo /><span>IEEE ITSS<small>Pune Chapter</small></span></a>
+          <img src="/ieee-pune-logo.png" alt="IEEE Pune Section" className="nav-extra-logo" />
+        </div>
         <button className="burger" aria-expanded={open} onClick={() => setOpen(!open)}>Menu</button>
         <nav id="menu" className={open ? 'open' : ''}>
+          <img src="/ieee-logo.png" alt="IEEE" className="nav-extra-logo nav-logo-right" />
           {links.map(([id, label]) => <a key={id} href={`#${id}`} onClick={() => setOpen(false)}>{label}</a>)}
         </nav>
       </div></header>

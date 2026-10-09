@@ -19,12 +19,12 @@ h3{font-size:1.5rem;font-weight:600}
 .topbar{background:#111;font-size:14px}
 .topbar .wrap{display:flex;gap:24px;padding-top:8px;padding-bottom:8px}
 .topbar a{color:#fff;text-decoration:none}.topbar a:hover{text-decoration:underline}
-.top-banner{background:#fff;padding:12px 0}
-.tb-flex{display:flex;justify-content:space-between;align-items:center}
-.tb-logo{height:48px;object-fit:contain}
 
 .nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:4px solid var(--red)}
 .navrow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.brand-group{display:flex;align-items:center;gap:20px}
+.nav-extra-logo{height:40px;object-fit:contain}
+.nav-logo-right{margin:auto 12px auto 0}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);font:700 1.6rem/1 var(--head)}
 .brand img{height:64px;width:64px;object-fit:contain;flex:none}
 .brand small{display:block;font-weight:500;font-size:1.05rem;color:var(--ieee)}
@@ -99,6 +99,9 @@ footer{background:#111;color:#cfd6de;font-size:.9rem;padding:40px 0}
   .burger{display:block}
   nav#menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:12px 24px;border-bottom:4px solid var(--red)}
   nav#menu.open{display:flex}
+  .nav-logo-right{margin:0 0 16px 0;align-self:flex-start}
+  .brand-group{gap:8px}
+  .nav-extra-logo{height:32px}
   .timeline li{grid-template-columns:minmax(0, 1fr);gap:4px}
 }
 @media (max-width:520px){.officers,.members{grid-template-columns:1fr}}
