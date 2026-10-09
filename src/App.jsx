@@ -11,8 +11,8 @@ function Header() {
   return (
     <>
       <div className="top-banner"><div className="wrap tb-flex">
-        <img src="/ieee-pune-logo.svg" alt="IEEE Pune Section" className="tb-logo" />
-        <img src="/ieee-logo.svg" alt="IEEE" className="tb-logo" />
+        <img src="/ieee-pune-logo.png" alt="IEEE Pune Section" className="tb-logo" />
+        <img src="/ieee-logo.png" alt="IEEE" className="tb-logo" />
       </div></div>
       <div className="topbar"><div className="wrap">
         <a href="https://www.ieee.org" target="_blank" rel="noopener noreferrer">IEEE.org</a>
@@ -151,8 +151,8 @@ export default function App() {
       <main id="top"><Hero /><About /><Officers /><Members /><Events /><Join /><Contact /></main>
       <footer><div className="wrap foot">
         <div className="foot-logos">
-          <img src="/ieee-pune-logo.svg" alt="IEEE Pune Section" className="foot-logo" />
-          <img src="/ieee-logo.svg" alt="IEEE" className="foot-logo" />
+          <img src="/ieee-pune-logo.png" alt="IEEE Pune Section" className="foot-logo" />
+          <img src="/ieee-logo.png" alt="IEEE" className="foot-logo" />
         </div>
         <div className="foot-text">
           <p>© {new Date().getFullYear()} IEEE ITSS Pune Chapter · IEEE Pune Section</p>
