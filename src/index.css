@@ -19,6 +19,9 @@ h3{font-size:1.5rem;font-weight:600}
 .topbar{background:#111;font-size:14px}
 .topbar .wrap{display:flex;gap:24px;padding-top:8px;padding-bottom:8px}
 .topbar a{color:#fff;text-decoration:none}.topbar a:hover{text-decoration:underline}
+.top-banner{background:#fff;padding:12px 0}
+.tb-flex{display:flex;justify-content:space-between;align-items:center}
+.tb-logo{height:48px;object-fit:contain}
 
 .nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:4px solid var(--red)}
 .navrow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
