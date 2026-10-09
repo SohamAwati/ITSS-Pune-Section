@@ -93,7 +93,7 @@ footer{background:#111;color:#cfd6de;font-size:.9rem;padding:28px 0}
   .burger{display:block}
   nav#menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:12px 24px;border-bottom:4px solid var(--red)}
   nav#menu.open{display:flex}
-  .timeline li{grid-template-columns:1fr;gap:4px}
+  .timeline li{grid-template-columns:minmax(0, 1fr);gap:4px}
 }
 @media (max-width:520px){.officers,.members{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.roadline{animation:none}html{scroll-behavior:auto}}

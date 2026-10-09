@@ -22,6 +22,6 @@ export const members = [
   { name: 'Dipali Patil', designation: 'Member' },
 ]
 export const events = [
-  { date: '22 JAN 2027', title: 'Indradhanu International Grand Challenge', text: 'under IEEE ITSS Pune Chapter', poster: '/indradhanu-poster.jpg' },
+  { date: '22 JAN 2027', title: 'Indradhanu International Grand Challenge', text: 'Co-organized by IEEE ITSS Pune Chapter', poster: '/indradhanu-event.jpg' },
 ]
-export const contact = { email: 'roshani.raut@pccoepune.org', location: 'Pune, Maharashtra, India' }
+export const contact = { email: 'rosh513@gmail.com', location: 'Pune, Maharashtra, India' }
